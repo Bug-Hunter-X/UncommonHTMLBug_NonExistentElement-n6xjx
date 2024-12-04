@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrect way to access element. Using getElementById on a non-existent element
+    const myNonExistentDiv = document.getElementById('myNonExistentDiv');
+    myNonExistentDiv.innerHTML = "This will cause an error";
+
+    //Correct way
+    const myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = "This text is modified by javascript"; 
+  </script>
+</body>
+</html>
