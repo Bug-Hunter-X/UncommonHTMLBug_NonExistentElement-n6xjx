@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    const myDiv = document.getElementById('myDiv');
+    if (myDiv) {
+      myDiv.innerHTML = "This text is modified by javascript";
+    } else {
+      console.error("Element with id 'myDiv' not found.");
+    }
+  </script>
+</body>
+</html>
